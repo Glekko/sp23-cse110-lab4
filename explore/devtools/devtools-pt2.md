@@ -1,0 +1,2 @@
+1. The bug was that calculateSum took in 2 strings, as num1 and num2 were dynamically typed to strings because getElementById wanted strings. Thus when it said `let result = num1 + num2`, it saw that they were strings and concatenated the strings together instead of adding them.
+2. Within the calculateSum function, I type casted parseFloat to num1 and num2.
